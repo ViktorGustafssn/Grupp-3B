@@ -2,17 +2,21 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+    border-top: 1px solid lightgray;
+    width: 100vw;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
 }
 
 .footer-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 0.5rem;
     list-style: none;
-}
-
-.footer-links ul {
-    
 }
 
 .footer-links li {
@@ -25,4 +29,8 @@ footer {
 .footer-links a {
     text-decoration: none;
     color: black;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
