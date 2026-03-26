@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.footer-links ul {
+    
+}
+
+.footer-links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+}

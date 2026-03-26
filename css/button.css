@@ -1,0 +1,16 @@
+.shop-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+.shop-now-button:hover {
+   overflow: 0.5;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: 1px solid rgb(255, 0, 0);
+
+    padding: 0.2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    border: 1px solid blue;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.search-button {
+    background-color: transparent;
+    border: transparent;
+}
