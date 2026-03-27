@@ -1,18 +1,22 @@
-.item-card{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 20px;
-    padding: 20px 40px;
-    width: 100%;
-  
-    min-height: 40vh;
+/* 2 stycken padding i .item-card? 
+
+Uppdaterad padding: 0 40px, samt gap så den är identisk med .hero-sections padding
+avstånd måste vara lika för en enhetlig design.
+*/
+.item-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  padding: 0 40px;
+  width: 100%;
+
+  min-height: 40vh;
 }
 
 .card {
-    background-color: #eaeaec;
-    padding: 20px;
-    text-align: center;
-    min-height: 40vh;
-
+  background-color: #eaeaec;
+  padding: 20px;
+  text-align: center;
+  min-height: 40vh;
 }

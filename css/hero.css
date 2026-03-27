@@ -1,21 +1,20 @@
+/* Uppdaterade padding: 0 40px */
 .hero-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 
-    padding: 20px 40px;
-    width: 100%;
-
+  padding: 0 40px;
+  width: 100%;
 }
 
 .hero {
-    padding: 15px;
-    text-align: center;
-    min-height: 40vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 15px;
+  text-align: center;
+  min-height: 40vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #eaeaec;;
+  background-color: #eaeaec;
 }
-
