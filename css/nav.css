@@ -179,7 +179,7 @@ nav {
   border-radius: 0.2rem;
 }
 
-#mobile-menu-button:checked~.mobile-nav-links {
+#mobile-menu-button:checked ~ .mobile-nav-links {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
