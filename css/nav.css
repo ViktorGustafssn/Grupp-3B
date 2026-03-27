@@ -1,43 +1,119 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-
-    border: 1px solid rgb(255, 0, 0);
-
-    padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.6rem;
 }
 
+/* Start: Nav-left */
 .nav-left {
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    list-style: none;
-    border: 1px solid blue;
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-3px);
+  color: #555;
+}
+
+/* End: Nav-left */
+
+/* Start: Nav-right */
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 0.3rem;
+  padding-right: 30px;
+
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
 }
 
 .search-button {
-    background-color: transparent;
-    border: transparent;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: transparent;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid lightgray;
 }
+
+.search-button:hover {
+  color: gray;
+}
+
+.login-button,
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: transparent;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.cart-button:hover,
+.login-button:hover {
+  transform: scale(1.1);
+  color: gray;
+  border-radius: 5px;
+}
+
+.nav-right button:hover {
+  cursor: pointer;
+}
+
+/* End: Nav-right */
