@@ -1,22 +1,55 @@
-/* 2 stycken padding i .item-card? 
-
-Uppdaterad padding: 0 40px, samt gap så den är identisk med .hero-sections padding
-avstånd måste vara lika för en enhetlig design.
-*/
 .item-card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 20px;
-  padding: 0 40px;
-  width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 20px;
+    padding: 20px 40px;
+    width: 100%;
 
-  min-height: 40vh;
+    min-height: 40vh;
 }
 
 .card {
-  background-color: #eaeaec;
-  padding: 20px;
-  text-align: center;
-  min-height: 40vh;
+    background-color: #eaeaec;
+    padding: 20px;
+    text-align: center;
+    min-height: 40vh;
+}
+
+.dji-class {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.dji-model {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dji-class p {
+    margin: 0;
+    padding: 0;
+}
+
+.dji-model img {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+}
+
+.product-image {
+    position: absolute;
+    justify-content: center;
+    object-fit: contain;
+    bottom: 0;
+    width: 60%;
+}
+
+.dji-buttons {
+    margin-top: 1rem;
 }
