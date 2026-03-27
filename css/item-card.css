@@ -3,14 +3,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 20px;
-
-    max-width: 1200px;
+    padding: 20px 40px;
     width: 100%;
-    min-height: 50vh;
+  
+    min-height: 40vh;
 }
 
 .card {
     background-color: #eaeaec;
     padding: 20px;
     text-align: center;
+    min-height: 40vh;
+
 }

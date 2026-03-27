@@ -1,118 +1,185 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/item-card.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <title>GadgetGalaxy</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/item-card.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <title>GadgetGalaxy</title>
-</head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <i class="ph ph-cpu"></i>
+          <!--<img src="assets/image.png" alt="GadgetGalaxy Logo" width="100%" />-->
+        </div>
 
-<body>
-  <nav>
-    <div class="nav-left">
-      <div class="logo">
-        <i class="ph ph-cpu"></i>
-        <!--<img src="assets/image.png" alt="GadgetGalaxy Logo" width="100%" />-->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
 
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+      <div class="nav-right">
+        <input
+          class="search"
+          type="text"
+          placeholder="Search for gadgets..."
+          alt="Search for gadgets..."
+        />
+
+        <button class="search-button" type="submit">
+          <i class="ph ph-magnifying-glass"></i>
+        </button>
+        <button class="login-button" type="submit" alt="Login">Login</button>
+        <button class="signup-button" type="submit" alt="Sign Up">
+          Sign Up
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to GadgetGalaxy</h1>
+          <p>Your one-stop shop for the latest and greatest gadgets.</p>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="hero-content">
+          <h1>MacBook Pro</h1>
+          <button class="shop-now-button" type="submit" alt="Shop Now">
+            Read More
+          </button>
+          <button class="shop-now-button" type="submit" alt="Shop Now">
+            Shop Now
+          </button>
+          <p>The last MacBook you'll ever need.</p>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="hero-content">
+          <h1>ROG Zephyrus G16 (2025)</h1>
+          <button class="shop-now-button" type="submit" alt="Shop Now">
+            Read More
+          </button>
+          <button class="shop-now-button" type="submit" alt="Shop Now">
+            Shop Now
+          </button>
+          <p>Your one-stop shop for the latest and greatest gadgets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="item-card">
+      <div class="card">
+        <img src="" alt="" />
+        <h2>DJI Mavic Pro</h2>
+        <p>kjsdfhksjdhffsd</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>Canon R6 Mark III</h2>
+        <p>Canon R6 Mark III</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>27" ViewFinity S9 S90PC 5K Smart Bildskärm</h2>
+        <p>kjsdfhksjdhffsd</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>27" Studio Display</h2>
+        <p>kjsdfhksjdhffsd</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>MacBook Neo</h2>
+        <p>kjsdfhksjdhffsd</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>Lenovo Chromebook 2in1 14"</h2>
+        <p>kjsdfhksjdhffsd</p>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Read More
+        </button>
+        <button class="shop-now-button" type="submit" alt="Shop Now">
+          Shop Now
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 GadgetGalaxy. All rights reserved.</p>
+      <ul class="footer-links">
+        <li>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Sales and Refunds</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Legal</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
       </ul>
-    </div>
-
-    <div class="nav-right">
-      <input class="search" type="text" placeholder="Search for gadgets..." alt="Search for gadgets..." />
-
-      <button class="search-button" type="submit">
-        <i class="ph ph-magnifying-glass"></i>
-      </button>
-      <button class="login-button" type="submit" alt="Login">Login</button>
-      <button class="signup-button" type="submit" alt="Sign Up">
-        Sign Up
-      </button>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to GadgetGalaxy</h1>
-      <p>Your one-stop shop for the latest and greatest gadgets.</p>
-
-    </div>
-  </section>
-
-  <section class="item-card">
-    <div class="card">
-      <h2>Iphone</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-
-    <div class="card">
-      <h2>MacBook</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-
-    <div class="card">
-      <h2>MacBook</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-
-    <div class="card">
-      <h2>MacBook</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-
-    <div class="card">
-      <h2>MacBook</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-
-    <div class="card">
-      <h2>MacBook</h2>
-      <p>kjsdfhksjdhffsd</p>
-      <button class="shop-now-button" type="submit" alt="Shop Now">Shop Now</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 GadgetGalaxy. All rights reserved.</p>
-    <ul class="footer-links">
-      <li>
-        <a href="#">Privacy Policy</a>
-        <span>|</span>
-      </li>
-      <li>
-        <a href="#">Terms of Use</a>
-        <span>|</span>
-      </li>
-      <li>
-        <a href="#">Sales and Refunds</a>
-        <span>|</span>
-      </li>
-      <li>
-        <a href="#">Legal</a>
-        <span>|</span>
-      </li>
-      <li>
-        <a href="#">Site Map</a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
