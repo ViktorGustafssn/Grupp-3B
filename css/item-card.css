@@ -20,3 +20,37 @@ avstånd måste vara lika för en enhetlig design.
   text-align: center;
   min-height: 40vh;
 }
+
+.macbook-neo{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+gap: 10px;
+
+}
+
+.macbook-neo img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.macbook-neo h2{
+  font-size: 2rem;
+ margin: 0 0 20px;
+ text-align: center;
+}
+
+.macbook-neo p{
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+
+
+
