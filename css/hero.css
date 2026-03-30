@@ -18,3 +18,16 @@
 
   background-color: #eaeaec;
 }
+
+.hero--macbook-pro {
+background: black;
+  color: white;
+}
+
+.hero--macbook-pro img {
+  width: 40%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
