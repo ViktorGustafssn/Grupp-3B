@@ -1,0 +1,248 @@
+body {
+    overflow-x: hidden;
+    background-color: #000;
+    color: #f5f5f7;
+}
+/* Hero */
+.mbp-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: black;
+    width: 100%;
+}
+
+.mbp-small-title {
+    font-size: 0.9rem;
+    color: #6e6e73;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    }
+
+.mbp-title {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #f5f5f7;
+    margin: 0;
+}
+
+.mbp-subtitle {
+    font-size: 1.3rem;
+    color: #a1a1a6;
+    margin: 16px 0 32px;
+}
+
+.mbp-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.mbp-btn-buy {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 980px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.mbp-btn-buy:hover {
+    background-color: #0077ed;
+}
+
+.mbp-btn-learn {
+    background-color: transparent;
+    color: #0071e3;
+    border: 1px solid #0071e3;
+    padding: 12px 24px;
+    border-radius: 980px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mbp-btn-learn:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+.mbp-hero-img {
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Specs */
+.mbp-specs {
+    background-color: #000;
+    padding: 80px 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.mbp-specs h2 {
+    font-size: 2.5rem;
+    color: #f5f5f7;
+    margin-bottom: 48px;
+}
+
+.mbp-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mbp-spec-card {
+    background-color: #1d1d1f;
+    border-radius: 18px;
+    padding: 40px 30px;
+    color: #f5f5f7;
+}
+
+.mbp-spec-card i {
+    font-size: 2.5rem;
+    color: #0071e3;
+    margin-bottom: 16px;
+}
+
+.mbp-spec-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.mbp-spec-card p {
+    color: #6e6e73;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* Navbar */
+.nav {
+  background-color: #000 !important;
+}
+
+.nav a, .nav-links a, .mobile-nav-links a {
+  color: #f5f5f7 !important;
+}
+
+.logo i {
+  color: #f5f5f7;
+}
+
+/* Sökfältet */
+.search-input {
+  background-color: #1d1d1f;
+  color: #f5f5f7;
+  border: 1px solid #333;
+}
+
+.search-input::placeholder {
+  color: #6e6e73;
+}
+
+.search-button, .login-button, .cart-button {
+  color: #f5f5f7;
+  background-color: transparent;
+}
+
+/* Footer */
+footer {
+  background-color: #000 !important;
+  color: #6e6e73;
+  border-top: 1px solid #333;
+}
+
+footer span {
+  color: #6e6e73;
+}
+
+.footer-links a {
+  color: #6e6e73 !important;
+}
+
+/* bildspel*/
+
+.mbp-gallery {
+    background: #000000;
+    padding: 80px 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.mbp-gallery h2 {
+    font-size: 2.5rem;
+    color: #f5f5f7;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Dölj radio-knapparna */
+.gallery input[type="radio"] {
+     display: none;
+}
+
+.gallery-slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    transition: transform 5s ease;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Visa rätt bild beroende på vilken radio som är checked */
+#img1:checked ~ .gallery-slides .gallery-slide:nth-child(1),
+#img2:checked ~ .gallery-slides .gallery-slide:nth-child(2),
+#img3:checked ~ .gallery-slides .gallery-slide:nth-child(3),
+#img4:checked ~ .gallery-slides .gallery-slide:nth-child(4) {
+    display: block;
+}
+
+.gallery-slides .gallery-slide {
+    display: none;
+}
+
+/* Dots, vilken bild som ska visaas*/
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-dots label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6e6e73;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Aktiv dot */
+#img1:checked ~ .gallery-dots label[for="img1"],
+#img2:checked ~ .gallery-dots label[for="img2"],
+#img3:checked ~ .gallery-dots label[for="img3"],
+#img4:checked ~ .gallery-dots label[for="img4"] {
+    background-color: #f5f5f7;
+}
