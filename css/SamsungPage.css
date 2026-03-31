@@ -33,15 +33,18 @@ nav {
 
 /* Start: Hero Section */
 .hero-section {
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .hero-container {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100;
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -54,16 +57,21 @@ nav {
 .hero-video {
   width: 100%;
   height: 100%;
+  max-height: 100vh;
   object-fit: cover;
   z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-btn-container {
   position: absolute;
-  bottom: 42%;
-  left: 28%;
-  transform: translateX(-50%);
+  bottom: 50%;
+  right: 30%;
+  transform: translateX(-50%), translateY(-50%);
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   z-index: 20;
   opacity: 0;
@@ -86,16 +94,17 @@ nav {
   color: white;
   padding: 0.5rem 1rem;
   font-weight: 550;
-  font-size: 16px;
+  font-size: clamp(16px, 2.5vw, 24px);
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 
 .hero-read-btn:hover,
 .hero-buy-btn:hover {
   background-color: white;
+  color: black;
   transition: all 0.2s ease;
 }
 
@@ -119,16 +128,17 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
 .info-top-section {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 100vw;
-  gap: 10rem;
+  gap: 5rem;
   padding: 1rem;
 }
 
@@ -169,7 +179,8 @@ nav {
   text-align: center;
   font-size: 24px;
   font-weight: 550;
-  padding: 15rem 20rem;
+  padding: 4rem 2rem;
+  max-width: 900px;
 }
 
 .info-bottom-section {
@@ -179,17 +190,26 @@ nav {
   align-items: center;
 }
 
-.ids-card-container {
+.ibs-h1 {
+  font-size: clamp(18px, 2.5vw, 34px);
+}
+
+.ibs-card-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   padding: 1rem;
 }
 
 /* Start: Info Card */
 
-.ids-card {
+.ibs-card {
   display: flex;
+  flex: 1 1 250px;
   flex-direction: column;
+  max-width: 200px;
   gap: 1rem;
   background-color: #f6f6f6;
   padding: 3rem 5rem;
@@ -198,17 +218,17 @@ nav {
   border-radius: 8px;
 }
 
-.ids-title {
+.ibs-title {
   font-weight: 600;
 }
 
-.ids-mid {
+.ibs-mid {
   display: flex;
   flex-direction: column;
   font-weight: 400;
 }
 
-.ids-colorful {
+.ibs-colorful {
   font-weight: 700;
   font-size: 30px;
   background: -webkit-linear-gradient(#3b4fef, #8385f7);
@@ -216,11 +236,11 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.ids-ts span {
+.ibs-ts span {
   font-weight: 400;
 }
 
-.ids-ts select {
+.ibs-ts select {
   font-weight: 600;
   font-size: 16px;
   outline: none;
@@ -230,12 +250,12 @@ nav {
   border-bottom: 2px solid black;
 }
 
-.idscw span {
+.ibscw span {
   font-weight: 800;
   font-size: 30px;
 }
 
-.idscw div {
+.ibscw div {
   font-weight: 400;
 }
 
@@ -244,19 +264,240 @@ nav {
 /* End: Info Section */
 
 /* Start: Storage Section */
+.storage-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+.storage-title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.storage-section img {
+  width: 100%;
+  min-height: auto;
+  display: block;
+}
 
 /* End: Storage Section */
+
+/* Start: Camera Section */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  padding-top: 10rem;
+}
+
+.cs-video-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0rem 10rem;
+}
+
+.csvw-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: clamp(24px, 2.5vw, 40px);
+  margin-bottom: 2rem;
+}
+
+.csvw-text span {
+  color: #2189ff;
+  font-size: clamp(20px, 2.5vw, 24px);
+}
+
+.cs-inner-video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 100%;
+}
+
+.csvw-video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.csvw-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.csvw-text-beneath {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #aaa;
+  width: 100%;
+  max-width: 60rem;
+  padding: 2rem;
+  font-size: clamp(14px, 2.5vw, 22px);
+  margin: 0 auto;
+}
+
+.csvw-text-detail {
+  font-weight: 600;
+  color: rgb(240, 240, 240);
+}
+/* End: Camera Section */
+
+/* Start: Specs Section */
+.specs-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+
+.ss-wrapper {
+  padding: 0rem 10rem;
+}
+
+.ss-top-section {
+  padding-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.ss-top-section p {
+  max-width: 40rem;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ss-text {
+  max-width: 60rem;
+  font-size: 20px;
+  color: #aaa;
+  padding-bottom: 2rem;
+}
+
+.ss-detail {
+  color: #fff;
+}
+
+.ss-video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ss-video-container {
+  width: 100%;
+  position: relative;
+  object-fit: unset;
+}
+
+.ss-video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: unset;
+}
+
+.ss-overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.ss-overlay-box.visible {
+  opacity: 1;
+}
+
+.ss-overlay-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.callout {
+  position: absolute;
+  pointer-events: none;
+}
+
+.callout--top-left {
+  left: 10%;
+  top: 26%;
+}
+.callout--mid-left {
+  left: 10%;
+  top: 44%;
+}
+.callout--bottom-left {
+  left: 10%;
+  top: 75%;
+}
+.callout--right {
+  right: 31%;
+  top: 8%;
+  flex-direction: column;
+}
+
+.callout-label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.callout-mp {
+  font-size: clamp(12px, 1.5vw, 22px);
+  font-weight: 600;
+  display: block;
+}
+
+.callout-aperture {
+  font-size: clamp(10px, 1vw, 14px);
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.callout-type {
+  font-size: clamp(10px, 1vw, 13px);
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+
+/* End: Specs Section */
+
+/* End: Footer */
 
 /* Start: Footer */
 
 /* End: Footer */
-
-/*
-För media queries
-
-Uppdatera färgerna i navbaren tills black vid scroll, placera background-color?
-
-*/
 
 /* Start: Keyframes */
 @keyframes showHeroBtns {
@@ -271,3 +512,51 @@ Uppdatera färgerna i navbaren tills black vid scroll, placera background-color?
   }
 }
 /* End: Keyframes */
+
+/* Start: Media Queries - Responsive */
+
+/* Start: Mobile */
+@media (max-width: 768px) {
+  /* Hero buttons */
+  .hero-btn-container {
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Info top */
+  .info-top-section {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Info text */
+  .info-middle-section {
+    padding: 2rem;
+    font-size: 18px;
+  }
+
+  /* Cards */
+  .ibs-card-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ibs-card {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  /* Storage section */
+  .storage-section {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+/* End: Mobile */
+/* End: Media Queries - Responsive */
