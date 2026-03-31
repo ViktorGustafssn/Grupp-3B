@@ -79,10 +79,10 @@
 
     <!-- Start: Hero section -->
     <section class="hero-section">
-      <div class="hero">
+      <div class="hero hero--welcome">
         <div class="hero-content">
           <h1>Welcome to GadgetGalaxy</h1>
-          <p>Your one-stop shop for the latest and greatest gadgets.</p>
+          <p>Your trusted source for the latest tech from top brands.</p>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
           <button class="shop-now-btn" type="submit" alt="Shop Now">
             Shop Now
           </button>
-          <p>Nu med M5, M5 Pro och M5 Max.</p>
+          <p>Now with M5, M5 Pro and M5 Max.</p>
           <img src="assets/macbook-pro.jpeg" alt="MacBook Pro" />
         </div>
       </div>
@@ -121,45 +121,54 @@
 
     <!-- Start: Product card, 2 each -->
     <section class="item-card">
-      <div class="card">
-        <div class="product-model">
-          <img src="assets/dji-logo.png" alt="dji-logo" />
-          <h2>Mavic Pro</h2>
-        </div>
+      <div class="card dji--mavic-card-wrapper">
         <div class="dji-mavic">
-          <p>Incredible drone. Unbeatable range.</p>
-          <img src="assets/dji-mavic-pro.png" alt="mavic-pro" />
-        </div>
-        <div class="dji-btn">
-          <button
-            class="learn-more-btn"
-            type="button"
-            onclick="window.location.href = 'https://www.dji.com/id/mavic/info'"
-          >
-            Read More
-          </button>
-          <button class="shop-now-btn" type="submit" alt="Shop Now">
-            Shop Now
-          </button>
+          <div class="dji-first-row">
+            <div>
+              <img src="assets/dji-logo.png" alt="dji-logo" />
+              <h2>Mavic Pro</h2>
+            </div>
+            <p>
+              The DJI Mavic Air is a compact, foldable drone with a 12 MP
+              camera, 4K video, and up to 21 minutes of flight time for your
+              adventures.
+            </p>
+          </div>
+          <div class="dji-second-row">
+            <img src="assets/dji-mavic-pro.png" alt="mavic-pro" />
+          </div>
+          <div class="dji-btn">
+            <button
+              class="learn-more-btn"
+              type="button"
+              onclick="
+                window.location.href = 'https://www.dji.com/id/mavic/info'
+              "
+            >
+              Read More
+            </button>
+            <button class="shop-now-btn" type="submit" alt="Shop Now">
+              Shop Now
+            </button>
+          </div>
         </div>
       </div>
       <div class="card canon-card-wrapper">
-        <a href="" class="canon-card">
-          <div class="canon-product-model">
-            <div class="canon-product-logo">
-              <img src="assets/Canon.png" alt="canon-logo" />
-              <h2>R6 Mark III</h2>
-            </div>
-            <p>32,5 MP. 40 bilder per sekund.</p>
+        <div class="canon-r6">
+          <div class="canon-first-row">
+            <img src="assets/Canon.png" alt="canon-logo" />
+            <h2>R6 Mark III</h2>
+            <p>It is a high-performance mirrorless camera <br>
+              that features a 32.5 MP sensor <br> and 40 frames per second shooting capability.</p>
           </div>
-          <div class="dji-btn">
+          <div class="button-row">
             <button class="learn-more-btn" type="button">Read More</button>
             <button class="shop-now-btn" type="button">Shop Now</button>
           </div>
-          <div class="canon-camera">
+          <div class="canon-third-row">
             <img src="assets/canon6D.png" alt="canon-r6-mark-iii" />
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="card">
@@ -230,10 +239,8 @@
           <img src="assets/MacBook Neo.png" alt="MacBook Neo" />
           <h2>MacBook Neo</h2>
           <p>
-            Experience the new MacBook Neo, Apple's most affordable MacBook
-            yet.<br />
-            It is powered by the A18 Pro chip and a brilliant 13-inch Retina
-            display, <br />
+            MacBook Neo powered by the A18 Pro chip <br />
+            and a brilliant 13-inch Retina display, <br />
             delivering incredible performance and stunning visuals.
           </p>
           <div class="button-row">
@@ -250,14 +257,24 @@
       </div>
 
       <div class="card">
-        <h2>Lenovo Chromebook 2in1 14"</h2>
-        <p>kjsdfhksjdhffsd</p>
-        <button class="learn-more-btn" type="submit" alt="Shop Now">
-          Read More
-        </button>
-        <button class="shop-now-btn" type="submit" alt="Shop Now">
-          Shop Now
-        </button>
+        <div class="red-camera">
+          <div class="first-row">
+            <img src="assets/red-logo.png" alt="" />
+            <h2>V-Raptor XE</h2>
+            <p>Raw Power. Pure Image.</p>
+          </div>
+          <div class="second-row">
+            <img src="assets/red-v-raptor.png" alt="v-raptor-xe" />
+          </div>
+          <div class="button-row">
+            <button class="learn-more-btn" type="submit" alt="Shop Now">
+              Read More
+            </button>
+            <button class="shop-now-btn" type="submit" alt="Shop Now">
+              Shop Now
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End: Product card, 2 each -->
