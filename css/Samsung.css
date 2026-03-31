@@ -1,0 +1,198 @@
+/* Start: Card in landing */
+
+/* Skriver över padding från första .card klassen från item-card.css */
+.card.card-samsung {
+  padding: 0;
+}
+
+.card-samsung {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #eaeaec;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Start: Left side */
+
+.card-samsung-left {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  align-items: end;
+}
+
+.card-samsung-left img {
+  position: absolute;
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  bottom: 0;
+  left: 0;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.samsung-img {
+  opacity: 1;
+  z-index: 1;
+}
+
+.samsung-img-hover {
+  opacity: 0;
+  z-index: 2;
+}
+
+.card-samsung-left:hover .samsung-img-hover {
+  opacity: 1;
+}
+
+.card-samsung-left:hover .samsung-img {
+  opacity: 0;
+}
+
+.card-samsung-left:hover img {
+  transform: scale(1.05);
+}
+
+/* End: Left side */
+
+/* Start: Right side */
+
+.card-samsung-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.card-samsung-right-banner {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  rotate: 45deg;
+  background-color: red;
+
+  width: 8rem;
+
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.csr-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card-samsung-title {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-weight: bold;
+}
+
+.cst-line {
+  font-weight: 300;
+  color: lightgray;
+}
+
+.cst-detail {
+  color: rgb(110, 110, 110);
+}
+
+.csr-text-galaxy {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+  font-weight: 500;
+}
+
+.csr-text-galaxy i {
+  color: rgb(137, 186, 202);
+}
+
+/* End: Right side */
+
+/* Start: Media queries - Responsive */
+
+@media (max-width: 1024px) {
+  .card-samsung {
+    flex-direction: column;
+  }
+
+  .card-samsung-left {
+    width: 95%;
+    height: clamp(250px, 40vw, 400px);
+  }
+
+  .card-samsung-left img {
+    padding: 0.5rem;
+    justify-content: center;
+  }
+
+  .card-samsung-right {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-samsung {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-samsung-left {
+    height: 300px;
+    width: 100%;
+  }
+
+  .card-samsung-right-banner {
+    right: -30px;
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-row button {
+    width: 100%;
+  }
+}
+
+@media (hover: none) {
+  .card-samsung-left:hover .samsung-img-hover {
+    opacity: 0;
+  }
+
+  .card-samsung-left:hover .samsung-img {
+    opacity: 1;
+  }
+
+  .card-samsung-left:hover img {
+    transform: none;
+  }
+}
+
+/* End: Media queries - Responsive */
+
+/* End: Card in landing */

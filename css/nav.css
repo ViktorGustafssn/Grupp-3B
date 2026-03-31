@@ -73,6 +73,7 @@ nav {
   padding: 0.3rem;
   padding-right: 30px;
 
+  color: black;
   outline: none;
   border: 1px solid lightgray;
   border-radius: 0.3rem;
@@ -195,7 +196,7 @@ nav {
 
 /* End: Mobile */
 
-/* Mobile media */
+/* Start: Mobile media */
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
@@ -213,10 +214,12 @@ nav {
     gap: 0.5rem;
   }
 }
+/* End: Mobile media */
 
-/* Desktop media */
+/* Start: Desktop media */
 @media screen and (min-width: 768px) {
   .mobile-nav-links {
     display: none !important;
   }
 }
+/* End: Desktop media */
