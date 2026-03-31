@@ -17,10 +17,12 @@
   align-items: center;
 
   background-color: #eaeaec;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
 }
 
 .hero--macbook-pro {
-background: black;
+  background: black;
   color: white;
 }
 
@@ -103,6 +105,13 @@ background: black;
 .hero--welcome p:active {
   transform: scale(0.95);
   transition: transform 0.1s ease;
+  margin: 20px;
 }
 
+.hero--welcome {
+  background: linear-gradient(to bottom, #cfe8ff, #e5e5e5);
+}
 
+.hero:hover {
+  scale: 1.008;
+}

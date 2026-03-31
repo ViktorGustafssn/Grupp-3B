@@ -1,21 +1,21 @@
 .button-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.learn-more-btn a{
-    text-decoration: none;
-    color: white;
+.learn-more-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .shop-now-btn a {
-    text-decoration: none;
-    color: blue;
+  text-decoration: none;
+  color: blue;
 }
 
 .button-row a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .learn-more-btn,
@@ -34,6 +34,7 @@
 
 .learn-more-btn:hover {
   background-color: #519ae2;
+  cursor: pointer;
 }
 
 .shop-now-btn {
@@ -44,5 +45,5 @@
 .shop-now-btn:hover {
   background-color: #0071e3;
   color: white;
+  cursor: pointer;
 }
- 

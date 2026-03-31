@@ -19,6 +19,13 @@ avstånd måste vara lika för en enhetlig design.
   padding: 20px;
   text-align: center;
   min-height: 40vh;
+
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  scale: 1.008;
 }
 
 .product-model {
@@ -123,7 +130,7 @@ avstånd måste vara lika för en enhetlig design.
 
 .canon-first-row p {
   font-size: 1rem;
-  margin-top: 0.65rem
+  margin-top: 0.65rem;
 }
 
 .canon-third-row {
@@ -137,13 +144,13 @@ avstånd måste vara lika för en enhetlig design.
   width: 29rem;
 }
 
-.macbook-neo{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-flex-wrap: wrap;
-gap: 10px;
+.macbook-neo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .macbook-neo img {
@@ -154,15 +161,15 @@ gap: 10px;
   display: block;
 }
 
-.macbook-neo h2{
+.macbook-neo h2 {
   font-size: 2rem;
- margin: 0 0 20px;
- text-align: center;
+  margin: 0 0 20px;
+  text-align: center;
 }
 
-.macbook-neo p{
+.macbook-neo p {
   font-size: 1.1rem;
-  margin: 0.5rem; 
+  margin: 0.5rem;
   text-align: center;
 }
 
@@ -172,8 +179,7 @@ gap: 10px;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;  
-
+  gap: 10px;
 }
 .viewfinity-s9 img {
   width: 100%;
@@ -182,12 +188,12 @@ gap: 10px;
   margin: 0 auto;
   display: block;
 }
-.viewfinity-s9 h2{
+.viewfinity-s9 h2 {
   font-size: 2rem;
- margin: 0 0 20px;
- text-align: center;
+  margin: 0 0 20px;
+  text-align: center;
 }
-.viewfinity-9 p{
+.viewfinity-9 p {
   font-size: 1.1rem;
   margin: 0.5rem;
   text-align: center;
@@ -236,9 +242,3 @@ gap: 10px;
 .second-row img {
   width: 17rem;
 }
-
-
-
-
-
-

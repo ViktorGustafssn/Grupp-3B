@@ -85,7 +85,11 @@
   top: 20px;
   right: -40px;
   rotate: 45deg;
+<<<<<<< HEAD
+  background-color: rgba(255, 0, 0, 0.775);
+=======
   background-color: rgba(255, 0, 0, 0.75);
+>>>>>>> 8038b6afcafc6a2917add89e6d36a9e9b2255823
 
   width: 8rem;
 
