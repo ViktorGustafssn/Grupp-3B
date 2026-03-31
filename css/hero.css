@@ -31,3 +31,19 @@ background: black;
   align-items: center;
 }
 
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 20px;
+
+}
+
+.hero--welcome{
+  background: linear-gradient(to bottom, #cfe8ff, #e5e5e5);
+}
+
+
