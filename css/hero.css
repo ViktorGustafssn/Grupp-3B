@@ -31,19 +31,78 @@ background: black;
   align-items: center;
 }
 
+.hero--welcome {
+  background: linear-gradient(to bottom, #cfe8ff, #e5e5e5);
+}
+
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin: 20px;
-
+.hero--welcome h1 {
+  font-size: 8rem;
+  margin-bottom: 40px;
 }
 
-.hero--welcome{
-  background: linear-gradient(to bottom, #cfe8ff, #e5e5e5);
+.hero--welcome h1:hover {
+  transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.hero--welcome h1:active {
+  transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+.hero--welcome p {
+  font-size: 1.5rem;
+  color: #716f6f;
+  font-style: italic;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 130px;
+  max-width: 100%;
+}
+
+.logos img {
+  margin: 60px 20px;
+  width: 10%;
+  height: auto;
+  object-fit: contain;
+}
+
+.logos #apple-logo {
+  width: 4%;
+}
+.logos #dji-logo {
+  width: 8%;
+}
+
+.logos img:hover,
+.hero--welcome h1:hover,
+.hero--welcome p:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.logos img:active,
+.hero--welcome h1:active,
+.hero--welcome p:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
 }
 
 
