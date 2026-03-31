@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/macbook-pro.css" />
+    <title>GadgetGalaxy</title>
+  </head>
+
+  <body>
+    <!--Start: Navbar-->
+    <nav>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo">
+            <i class="ph ph-cpu"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="search">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Search for gadgets..."
+            />
+
+            <button class="search-button" type="submit">
+              <i class="ph ph-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <button class="login-button" type="submit">
+            <i class="ph ph-lock"></i>
+          </button>
+
+          <button class="cart-button" type="submit">
+            <i class="ph ph-bag"></i>
+          </button>
+
+          <!-- Mobile hamburger -->
+          <input type="checkbox" id="mobile-menu-button" />
+
+          <label for="mobile-menu-button" class="menu-button">
+            <i class="ph ph-list"></i>
+          </label>
+
+          <ul class="mobile-nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <!-- Mobile hamburger -->
+        </div>
+      </div>
+    </nav>
+    <!--Slut: Navbar-->
+
+    <!-- Hero -->
+<section class="mbp-hero">
+  <p class="mbp-small-title">MACBOOK PRO</p>
+  <h1 class="mbp-title">Fast runs in the family.</h1>
+  <p class="mbp-subtitle">Now with M5, M5 Pro and M5 Max.</p>
+  <div class="mbp-buttons">
+    <a href="https://www.apple.com/macbook-pro/" class="mbp-btn-buy">
+        Buy from $9,999,999.99
+    </a>
+    <a href="#mbp-specs"class="mbp-btn-learn">Learn more ↓</a>
+  </div>
+  <img src="assets/macbook-pro.jpeg" alt="MacBook Pro" class="mbp-hero-img" />
+</section>
+
+<!-- Start: Bildspel-->
+
+<section class="mbp-gallery">
+    <h2> A laptop that can do <span class="mbp-subtitle">(almost)</span> everything...</h2>
+  
+  <div class="gallery">
+    <input type="radio" name="gallery" id="img1" checked />
+    <input type="radio" name="gallery" id="img2" />
+    <input type="radio" name="gallery" id="img3" />
+    <input type="radio" name="gallery" id="img4" />
+
+    <div class="gallery-slides">
+      <div class="gallery-slide">
+        <img src="assets/mac-img1.png" alt="MacBook" />
+      </div>
+      <div class="gallery-slide">
+        <img src="assets/mac-img2.png" alt="MacBook" />
+      </div>
+      <div class="gallery-slide">
+        <img src="assets/mac-img3.png" alt="MacBook" />
+      </div>
+      <div class="gallery-slide">
+        <img src="assets/mac-img4.png" alt="MacBook" />
+      </div>
+    </div>
+
+    <div class="gallery-dots">
+      <label for="img1"></label>
+      <label for="img2"></label>
+      <label for="img3"></label>
+      <label for="img4"></label>
+    </div>
+  </div>
+</section>
+
+<!-- Slut: Bildspel-->
+
+<!-- Specs -->
+<section class="mbp-specs" id="mbp-specs">
+  <h2>Built for what's next.</h2>
+  <div class="mbp-specs-grid">
+    <div class="mbp-spec-card">
+      <i class="ph ph-cpu"></i>
+      <h3>M5 chip</h3>
+      <p>Up to 18-core CPU and 40-core GPU for extreme performance.</p>
+    </div>
+    <div class="mbp-spec-card">
+      <i class="ph ph-battery-charging"></i>
+      <h3>24h battery</h3>
+      <p>The longest battery life ever in a MacBook Pro.</p>
+    </div>
+    <div class="mbp-spec-card">
+      <i class="ph ph-monitor"></i>
+      <h3>Liquid Retina XDR</h3>
+      <p>Stunning 16-inch display with up to 1600 nits of brightness.</p>
+    </div>
+    <div class="mbp-spec-card">
+      <i class="ph ph-hard-drive"></i>
+      <h3>Up to 128GB RAM</h3>
+      <p>Unified memory for seamless multitasking.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Start: Footer section -->
+    <footer>
+      <p>&copy; 2026 GadgetGalaxy. All rights reserved.</p>
+      <ul class="footer-links">
+        <li>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Sales and Refunds</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Legal</a>
+          <span>|</span>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- End: Footer section -->
+  </body>
+</html>
