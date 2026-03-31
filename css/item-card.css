@@ -21,37 +21,52 @@ avstånd måste vara lika för en enhetlig design.
   min-height: 40vh;
 }
 
-.product-model {
+.dji-mavic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.dji-first-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.dji-first-row div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
 }
 
-.product-model h2 {
+.dji-first-row img {
+  width: 10rem;
+}
+
+.dji-first-row h2 {
   margin: 0;
+  font-size: 3rem;
 }
 
-.product-model img {
-  width: 5rem;
+.dji-first-row p {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
-.dji-mavic {
+.dji-second-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
-
+  flex-wrap: wrap;
 }
 
-.dji-mavic img {
-  max-width: 380px;
-  height: auto;
-  display: block;
-  width: 25rem;
-  object-fit: contain;
+.dji-second-row img {
+  width: 30rem;
 }
 
 .dji-btn {
@@ -92,62 +107,55 @@ avstånd måste vara lika för en enhetlig design.
   padding-bottom: 0;
 }
 
-.canon-card {
+.canon-r6 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-decoration: none;
-  color: black;
   width: 100%;
   height: 100%;
 }
 
-.canon-product-model div {
+.canon-first-row {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.canon-product-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 0.5rem;
+.canon-first-row img {
+  width: 13rem;
 }
 
-.canon-product-model img {
-  width: 8.5rem;
-}
-
-.canon-product-model h2 {
+.canon-first-row h2 {
   font-size: 1.7rem;
+  padding-top: 0.65rem;
   margin: 0;
 }
 
-.canon-product-model p {
+.canon-first-row p {
   font-size: 0.75rem;
-  margin-top: 0.5rem
+  margin-top: 0.65rem
 }
 
-.canon-camera {
+.canon-third-row {
   display: flex;
-  justify-content: center;
-  margin-top: auto;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
-.canon-camera img {
-  width: 17rem;
+.canon-third-row img {
+  width: 29rem;
 }
-.macbook-neo{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-flex-wrap: wrap;
-gap: 10px;
+
+.macbook-neo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
 
 }
 
@@ -159,18 +167,58 @@ gap: 10px;
   display: block;
 }
 
-.macbook-neo h2{
+.macbook-neo h2 {
   font-size: 2rem;
- margin: 0 0 20px;
- text-align: center;
+  margin: 0 0 20px;
+  text-align: center;
 }
 
-.macbook-neo p{
+.macbook-neo p {
   font-size: 1.1rem;
   margin: 0.5rem 0;
   text-align: center;
 }
 
+.red-camera {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
+.first-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.first-row img {
+  width: 16rem;
+}
 
+.first-row h2 {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+
+.first-row p {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-row img {
+  width: 17rem;
+}
