@@ -19,7 +19,7 @@
 
   <body>
     <!-- Start: Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" id="section-1">
       <!--Start: Navbar-->
       <nav>
         <div class="nav">
@@ -371,6 +371,12 @@
           </li>
           <li>
             <a href="#">Site Map</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a class="up-btn" href="#section-1"
+              ><i class="ph ph-caret-circle-up"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -387,6 +393,13 @@
             .querySelector("#section-2")
             .scrollIntoView({ behavior: "smooth" });
         });
+
+      document.querySelector(".up-btn").addEventListener("click", function (e) {
+        e.preventDefault();
+        document
+          .querySelector("#section-1")
+          .scrollIntoView({ behavior: "smooth" });
+      });
 
       const specsVideo = document.querySelector(".ss-video-container video");
       const overlay = document.querySelector(".ss-overlay-box");
