@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Uppdaterade padding: 0 40px */
 .hero-section {
   display: grid;
@@ -19,18 +23,6 @@
   background-color: #eaeaec;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
-}
-
-.hero--macbook-pro {
-  background: black;
-  color: white;
-}
-
-.hero--macbook-pro img {
-  width: 40%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero--welcome {
@@ -114,4 +106,51 @@
 
 .hero:hover {
   scale: 1.008;
+}
+
+/* MACBOOK PRO */
+
+.hero--macbook-pro {
+  background: black;
+  color: white;
+}
+
+.hero--macbook-pro a {
+  text-decoration: none;
+}
+
+.hero--macbook-pro img {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.mbp-img-wrapper {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.mbp-img,
+.mbp-img-hover {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.mbp-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.hero--macbook-pro:hover .mbp-img {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.hero--macbook-pro:hover .mbp-img-hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
