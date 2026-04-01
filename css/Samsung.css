@@ -12,11 +12,10 @@
   gap: 0.4rem;
   background-color: #eaeaec;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 /* Start: Left side */
-
-
 
 .card-samsung-left {
   position: relative;
@@ -77,24 +76,23 @@
   align-items: center;
   gap: 1rem;
   right: 20px;
-  top:15px;
-  height: 100%;
 
-  overflow: hidden;
+  height: 100%;
 }
 
 .card-samsung-right-banner {
   position: absolute;
   top: 20px;
-  right: -35px;
+  right: -80px;
   rotate: 45deg;
   background-color: rgba(255, 0, 0, 0.75);
 
-  width: 10rem;
+  width: 14rem;
 
   text-align: center;
   font-weight: bold;
-  padding: 0.5rem;
+  font-size: 18px;
+  padding: 1.5rem;
 }
 
 .csr-text-wrapper {
@@ -103,11 +101,12 @@
   align-items: center;
   flex-direction: column;
   gap: 0.3rem;
+  padding-top: 1.5rem;
 }
 
 .samsung-logo {
-  height:3rem;
-  width:10rem;
+  height: 3rem;
+  width: 10rem;
   margin-bottom: 3rem;
 }
 

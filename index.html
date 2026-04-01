@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/Samsung.css" />
+    <link rel="stylesheet" href="css/switch.css" />
     <title>GadgetGalaxy</title>
   </head>
 
@@ -32,7 +33,7 @@
 
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#building">Products</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -81,7 +82,7 @@
     <!-- Start: Hero section -->
     <section class="hero-section">
       <div class="hero hero--welcome">
-        <div class="hero-content">
+        <div class="hero-content-top">
           <h1>GadgetGalaxy</h1>
           <p>Your trusted source for the latest tech from top brands.</p>
         </div>
@@ -94,6 +95,12 @@
             alt="Samsung Logo"
           />
           <img id="canon-logo" src="assets/Canon.png" alt="Canon Logo" />
+          <img id="red-logo" src="assets/red-logo.png" alt="Red Logo" />
+          <img
+            id="switch-logo"
+            src="assets/nintendo-logo.png"
+            alt="Nintendo Logo"
+          />
         </div>
       </div>
 
@@ -123,16 +130,37 @@
         </div>
       </div>
 
-      <div class="hero">
-        <div class="hero-content">
-          <h1>ROG Zephyrus G16 (2025)</h1>
-          <button class="learn-more-btn" type="submit" alt="Shop Now">
-            Read More
-          </button>
-          <button class="shop-now-btn" type="submit" alt="Shop Now">
-            Shop Now
-          </button>
-          <p>Your one-stop shop for the latest and greatest gadgets.</p>
+      <div class="hero switch" id="building">
+        <div class="hero-content switch">
+          <div class="switch-img-container">
+            <img
+              src="assets/switch-text.png"
+              alt="image of switch 2 text"
+              class="switch-img1"
+            />
+            <img
+              src="assets/switch-img.png"
+              alt="image of a switch 2 console"
+            />
+          </div>
+          <div class="button-row">
+            <button
+              class="learn-more-btn switch-btn1"
+              type="submit"
+              alt="Shop Now"
+            >
+              <a href="https://www.nintendo.se/nintendo-switch-2-family"
+                >Read More</a
+              >
+            </button>
+            <button
+              class="shop-now-btn switch-btn2"
+              type="submit"
+              alt="Shop Now"
+            >
+              Shop Now
+            </button>
+          </div>
         </div>
       </div>
 
@@ -186,7 +214,12 @@
               and 40 frames per second shooting capability.
             </p>
             <div class="button-row">
-              <button class="learn-more-btn" type="button">Read More</button>
+              <button class="learn-more-btn" type="button">
+                <a
+                  href="https://id.canon/en/consumer/eos-r6-mark-iii/body/product"
+                  >Read More</a
+                >
+              </button>
               <button class="shop-now-btn" type="button">Shop Now</button>
             </div>
           </div>
@@ -238,7 +271,7 @@
 
         <div class="card-samsung-right">
           <div class="card-samsung-right-banner">
-            <span>New</span>
+            <span>SALE</span>
           </div>
 
           <div class="csr-text-wrapper">
@@ -314,7 +347,7 @@
           </div>
           <div class="button-row">
             <button class="learn-more-btn" type="submit" alt="Shop Now">
-              Read More
+              <a href="https://www.red.com/v-raptor-xe">Read More</a>
             </button>
             <button class="shop-now-btn" type="submit" alt="Shop Now">
               Shop Now
