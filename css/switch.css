@@ -7,17 +7,26 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  width: 100%;
 }
 
 .switch-img-container {
   display: flex;
   justify-content: center;
-  gap: 5rem;
   padding: 1rem;
+  gap: 2rem;
 }
 
-.switch-img1 {
-  min-width: 683px;
+.img-wrapper1 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-wrapper2 {
+  flex: 1;
+  display: flex;
+  justify-content: start;
 }
 
 .learn-more-btn.switch-btn1 {
